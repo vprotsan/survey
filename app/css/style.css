@@ -65,6 +65,9 @@ body {
   line-height: 1.6;
   margin-top: 3rem;
   margin-bottom: 3rem; }
+  body .container-fluid {
+    max-width: 1110px;
+    margin: 0 auto; }
   body h1 {
     text-transform: uppercase;
     text-align: center;
@@ -90,6 +93,27 @@ body {
     margin-bottom: 2rem; }
   body .checkbox label {
     padding-left: 0; }
+  body thead th {
+    font-weight: 600;
+    text-align: center; }
+  body td input[type=radio],
+  body td input[type=checkbox] {
+    display: block;
+    margin: 0.5rem auto; }
+  body label {
+    display: inline-block;
+    padding: 0px 1.4rem 0px .4rem; }
+  body label + p {
+    margin-top: 2rem; }
+  body .table > tbody > tr > td {
+    vertical-align: middle;
+    padding: 12px 0; }
+  body .form-horizontal .control-label {
+    padding-top: 0; }
+  body .table-condensed td input {
+    margin: 0 auto; }
+  body .table-condensed td label {
+    text-align: center; }
   body .checkbox label:after,
   body .radio label:after {
     content: '';

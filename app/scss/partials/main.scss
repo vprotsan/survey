@@ -13,6 +13,11 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
 
+    .container-fluid {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
     h1 {
         text-transform: uppercase;
         text-align: center;
@@ -53,6 +58,47 @@ body {
     .checkbox {
         label {
             padding-left: 0;
+        }
+    }
+
+    thead th {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    td input[type=radio],
+    td input[type=checkbox] {
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+    label {
+        display: inline-block;
+        padding: 0px 1.4rem 0px .4rem;
+    }
+
+    label + p {
+        margin-top: 2rem;
+    }
+
+    .table>tbody>tr>td {
+        vertical-align: middle;
+        padding: 12px 0;
+    }
+
+    .form-horizontal .control-label {
+        padding-top: 0;
+    }
+
+    .table-condensed {
+        td {
+            input {
+                margin: 0 auto;
+            }
+
+            label {
+                text-align: center;
+            }
         }
     }
 
