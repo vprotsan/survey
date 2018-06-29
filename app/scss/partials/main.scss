@@ -12,10 +12,26 @@ body {
     line-height: 1.6;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding: 0 2rem;
+
+    .form-group {
+        margin: 3rem 0 3.5rem;
+
+        & > label {
+            padding-bottom: 1rem;
+        }
+    }
 
     .container-fluid {
         max-width: 1110px;
         margin: 0 auto;
+    }
+
+    label {
+        b {
+            padding-right: 1rem;
+            font-weight: 800;
+        }
     }
 
     h1 {
@@ -41,14 +57,19 @@ body {
     }
 
     input[type="text"],
-    textarea {
+    textarea.form-control {
         font-size: 1.4rem;
         line-height: 1.4;
         padding: 0.5rem;
+        border-radius: 5px;
     }
 
     .form-control {
         height: 54px;
+    }
+
+    textarea.form-control {
+        height: auto;
     }
 
     .form-group {
@@ -84,6 +105,20 @@ body {
     .table>tbody>tr>td {
         vertical-align: middle;
         padding: 12px 0;
+        text-align: center;
+
+        label {
+            padding: 0;
+            padding-top: .5rem;
+        }
+
+        input[type="radio"]{
+            padding: 0;
+        }
+    }
+
+    .table>tbody>tr>td:first-child{
+        text-align: left;
     }
 
     .form-horizontal .control-label {
@@ -159,5 +194,75 @@ body {
     .checkbox label input[type="checkbox"]:disabled + .cr,
     .radio label input[type="radio"]:disabled + .cr {
         opacity: .5;
+    }
+
+    footer {
+        margin: 6rem 0 16rem;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    button[type="submit"]{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .invalid-feedback {
+        display: none;
+    }
+
+    .col-md-8 {
+        & > div {
+            display :block;
+            margin: 1rem;
+        }
+    }
+
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    @include mq("tablet-wide"){
+        .form-horizontal .control-label {
+            text-align: right;
+        }
+    }
+
+    .part14 {
+        div {
+            display: block;
+        }
+
+        div:nth-child(4) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .table-responsive {
+        border: 0;
+        overflow-y: scroll;
+        margin:0;
+        margin-right: -2em;
+    }
+
+    .big-table {
+        overflow: auto;
+        margin-right:-2em;
+
+        & + textarea {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .table-responsive {
+            margin: 0;
+
+            @include mq("tablet-wide"){
+                margin: 1rem;
+            }
+        }
     }
 }

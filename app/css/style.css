@@ -64,10 +64,18 @@ body {
   font-size: 1.3rem;
   line-height: 1.6;
   margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding: 0 2rem; }
+  body .form-group {
+    margin: 3rem 0 3.5rem; }
+    body .form-group > label {
+      padding-bottom: 1rem; }
   body .container-fluid {
     max-width: 1110px;
     margin: 0 auto; }
+  body label b {
+    padding-right: 1rem;
+    font-weight: 800; }
   body h1 {
     text-transform: uppercase;
     text-align: center;
@@ -83,12 +91,15 @@ body {
     height: 20px;
     padding-right: 1rem; }
   body input[type="text"],
-  body textarea {
+  body textarea.form-control {
     font-size: 1.4rem;
     line-height: 1.4;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    border-radius: 5px; }
   body .form-control {
     height: 54px; }
+  body textarea.form-control {
+    height: auto; }
   body .form-group {
     margin-bottom: 2rem; }
   body .checkbox label {
@@ -107,7 +118,15 @@ body {
     margin-top: 2rem; }
   body .table > tbody > tr > td {
     vertical-align: middle;
-    padding: 12px 0; }
+    padding: 12px 0;
+    text-align: center; }
+    body .table > tbody > tr > td label {
+      padding: 0;
+      padding-top: .5rem; }
+    body .table > tbody > tr > td input[type="radio"] {
+      padding: 0; }
+  body .table > tbody > tr > td:first-child {
+    text-align: left; }
   body .form-horizontal .control-label {
     padding-top: 0; }
   body .table-condensed td input {
@@ -155,3 +174,41 @@ body {
   body .checkbox label input[type="checkbox"]:disabled + .cr,
   body .radio label input[type="radio"]:disabled + .cr {
     opacity: .5; }
+  body footer {
+    margin: 6rem 0 16rem; }
+    body footer p {
+      text-align: center; }
+  body button[type="submit"] {
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+  body .invalid-feedback {
+    display: none; }
+  body .col-md-8 > div {
+    display: block;
+    margin: 1rem; }
+  body .form-horizontal .control-label {
+    text-align: left; }
+  @media only screen and (min-width: 1024px) {
+    body .form-horizontal .control-label {
+      text-align: right; } }
+  body .part14 div {
+    display: block; }
+  body .part14 div:nth-child(4) {
+    margin-bottom: 1rem; }
+  body .table-responsive {
+    border: 0;
+    overflow-y: scroll;
+    margin: 0;
+    margin-right: -2em; }
+  body .big-table {
+    overflow: auto;
+    margin-right: -2em; }
+    body .big-table + textarea {
+      margin-right: 15px;
+      margin-left: 15px; }
+    body .big-table .table-responsive {
+      margin: 0; }
+      @media only screen and (min-width: 1024px) {
+        body .big-table .table-responsive {
+          margin: 1rem; } }
